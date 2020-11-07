@@ -7,6 +7,10 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 
+//Question 1 
+// Created by Tamzid Chowdhury
+// comment on the  “stack linked list.txt”
+
 #ifndef H_StackType
 #define H_StackType
  
