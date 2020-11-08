@@ -8,8 +8,7 @@ Code, Compile, Run and Debug online from anywhere in world.
 *******************************************************************************/
 // Created By Tamzid Chowdhury
 // Question 1
-// Comment on  “stack linked list.txt”
-
+// Comment on  “stack linked list.txt” 
 
 #ifndef H_StackType
 #define H_StackType
