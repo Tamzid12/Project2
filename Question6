@@ -62,12 +62,12 @@ void reverseString(string str)
 {
     stack <char> st;
     
-    for ( int i=0; i<str.length(); i++){
+    for ( int i=0; i<str.length(); i++){ // go until the stack has space
         if (str[i] != ' ')
         st.push(str[i]);
         
         else{
-            while ( st.empty() == false ){
+            while ( st.empty() == false ){ // as long as the stack is not empty
                 cout << st.top();
                 st.pop();
             }
@@ -85,19 +85,19 @@ void reverseString(string str)
 int main()
 {
     ifstream infile;
-    infile.open("input.txt");
-    if (infile.fail()){
+    infile.open("input.txt"); // the input file
+    if (infile.fail()){ // if the file isn't found.
         cout<< "No such file was found";
     }
     else{
         string str ;
-        while(getline(infile,str)){
+        while(getline(infile,str)){ // reads each line from the input file.
             cout<< "The original string: " << str << endl;
             cout << "The Reversed String: ";
             reverseString(str);
             cout<< endl;
         }
-        infile.close();
+        infile.close(); // close to prevent memory leaks.
     }
     
   
